@@ -10,8 +10,7 @@
  *  Date of creation : 17/06/2019 01:05AM UTC +1                                **
  *  Specification : Read a moisture capacitive sensor with an arduino uno       **     
  *                  and turn on a 230/5V relay after the soil reaches a         **
- *                  certain level of humidity                                   ** 
- *                  humidity                                                    **
+ *                  certain level of humidity                                   **
  *                                                                              **
  *********************************************************************************/
 
