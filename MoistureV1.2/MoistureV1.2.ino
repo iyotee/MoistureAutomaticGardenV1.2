@@ -28,8 +28,9 @@
   int moisture;
   int percentage;
   int D = 500;
-  int irrigationTime = 8000; /*Temps d'irrigation à changer selon la capacité d'evacuation de votre pompe et donc de la quantitée d'eau nécéssaire lord d'un arrosage /*
+  int irrigationTime = 6000; /*Temps d'irrigation (en ms)  -> à changer selon la capacité d'evacuation de votre pompe et donc de la quantitée d'eau nécéssaire lors d'un arrosage /*
 
+  
   /* * * * * * * * * * * * * * * * * * * * * * 
    * * * * * * * * * * * * * * * * * * * * * *  
    * *                                     * *
@@ -61,7 +62,7 @@ void loop() {
   Serial.print(" %");
   Serial.println("");
 
-  if (moisture > 500 ){
+  if (percentage < 40){
     digitalWrite(relay, LOW); /* Si le pourcentage est inférieur à 40% d'humidité, On allume la pompe */
     delay(irrigationTime);
     digitalWrite(relay, HIGH);
