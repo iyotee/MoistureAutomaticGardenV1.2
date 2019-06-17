@@ -28,7 +28,7 @@
   int moisture;
   int percentage;
   int D = 500;
-  int irrigationTime = 6000; /*Temps d'irrigation (en ms)  -> à changer selon la capacité d'evacuation de votre pompe et donc de la quantitée d'eau nécéssaire lors d'un arrosage /*
+  int irrigationTime = 6000; /*Temps d'irrigation (en ms)  -> à changer selon la capacité d'evacuation de votre pompe et donc de la quantitée d'eau nécéssaire lors d'un arrosage */
 
   
   /* * * * * * * * * * * * * * * * * * * * * * 
