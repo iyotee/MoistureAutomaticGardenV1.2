@@ -54,7 +54,7 @@ void loop() {
   Serial.print("Raw data: ");
   Serial.print(moisture);
 
-  percentage = map(moisture, map_low, map_high, 0, 100); /* On utilise la fonction MAP pour */
+  percentage = map(moisture, map_low, map_high, 0, 100); /* On utilise la fonction MAP pour mapé les raw data de la sonde vers une fourchette de pourcentage*/
 
   Serial.print( " | " );
   Serial.print(percentage);
