@@ -1,12 +1,16 @@
 /*********************************************************************************
+ *                                                                              **
  *          ********************************************************            **
- *          **  Moisture capacitive sensor V1.2 Automatic garden  **            **             
+ *          *   Moisture capacitive sensor V1.2 Automatic garden   *            **             
  *          ********************************************************            **                             
+ *                                                                              **
  *                                                                              **
  *  Author : Jérémy Noverraz                                                    **
  *  Date of creation : 17/06/2019 01:05AM UTC +1                                **
  *  Specification : Read a moisture capacitive sensor with an arduino uno       **     
- *   et allumer un relais 230/5V après un certain seuil de secheresse atteint   **
+ *                  and turn on a 230/5V relay after the soil reaches a         **
+ *                  certain level of humidity                                   ** 
+ *                  humidity                                                    **
  *                                                                              **
  *********************************************************************************/
 
