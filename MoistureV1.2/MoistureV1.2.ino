@@ -14,15 +14,6 @@
  *                                                                              **
  *********************************************************************************/
 
-
-  /* * * * * * * * * * * * *
-   * * * * * * * * * * * * *
-   * *                   * *
-   * *    VARIABLES      * * 
-   * *                   * * 
-   * * * * * * * * * * * * *
-   * * * * * * * * * * * * */
-
   int analogPin = A0;
   int relay = 13;
   int moisture;
@@ -30,14 +21,6 @@
   int D = 500;
   int irrigationTime = 6000; /*Temps d'irrigation (en ms)  -> à changer selon la capacité d'evacuation de votre pompe et donc de la quantitée d'eau nécéssaire lors d'un arrosage */
 
-  
-  /* * * * * * * * * * * * * * * * * * * * * * 
-   * * * * * * * * * * * * * * * * * * * * * *  
-   * *                                     * *
-   * *   VARIABLES POUR LA CALIBRATION     * * 
-   * *                                     * * 
-   * * * * * * * * * * * * * * * * * * * * * * 
-   * * * * * * * * * * * * * * * * * * * * * */
 
    int map_low = 619; /* valeure maximal quand la sonde est à l'air libre */
    int map_high = 241; /* valeure maximal quand la sonde est trempé dans un verre d'eau */
@@ -67,9 +50,5 @@ void loop() {
     delay(irrigationTime);
     digitalWrite(relay, HIGH);
     }
-
-
   delay(1000);
-  
-
 }
